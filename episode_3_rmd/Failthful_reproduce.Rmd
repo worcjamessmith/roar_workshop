@@ -1,0 +1,62 @@
+---
+title: "Faithful_reproduce"
+author: "James A. Smith"
+date: "11/11/2020"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction 
+
+The Old Faithful data set contains the waiting time between eruptions and the duration of the eruption for the Old Faithful geyser in Yellowstone National Park, Wyoming, USA.
+
+First load the data:
+
+```{r}
+df <- faithful
+
+```
+
+The data description is given in the table below.
+
+```{r}
+desc <- data.frame(variable = colnames(df), 
+                        description = c("the duration of the eruption, minutes",
+                           "waiting time to next eruption, minutes"))
+
+knitr::kable(desc)
+
+```
+
+A summary of the distributions of each variable are as follows:
+
+```{r}
+summary(df)
+```
+
+The marginal distributions of the variables shown below:
+
+```{r}
+hist(df$eruptions)
+hist(df$waiting)
+```
+
+# Conclusions and further work
+
+Both the duration of eruptions and waiting time show a bimodal distribution. In further work I will plot the scatter of the data (‘eruptions duration’ vs ‘waiting time’ ) to see whether I can detect any patterns.
+
+```{r}
+plot(df$eruptions, df$waiting)
+```
+
+
+
+
+
+
+
