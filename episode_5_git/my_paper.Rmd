@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 Make changes to the document. Writing things here.
 
 More changes
-This is the introduction 
+This is the introdution here 
 
 Some changes to this 
 
