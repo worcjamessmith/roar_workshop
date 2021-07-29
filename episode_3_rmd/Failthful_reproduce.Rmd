@@ -11,7 +11,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Make a chance 
+Make a change 
 
 # Introduction 
 
